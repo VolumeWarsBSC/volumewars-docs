@@ -1,0 +1,32 @@
+input: .
+output: build
+url: https://docs.gving.com
+branding:
+  colors:
+    label:
+      background: "#5798e7"
+      text: "#ffffff"
+  logo: logo.svg
+  logoDark: logo.svg
+  title: VolumeWars
+  label: Docs
+links:
+- text: Home Page
+  link: https://volumewars.app
+  icon: home-fill
+  target: blank
+- text: Game
+  link: https://volumewars.app/#/battle
+  icon: rocket
+  target: blank
+- text: Marketplace
+  link: https://volumewars.app/#/marketplace
+  icon: tag
+  target: blank
+- text: NFT Locker
+  link: https://volumewars.app/#/locker
+  icon: file-directory
+  target: blank
+footer:
+  copyright: "&copy; VolumeWars {{ year }}. All rights reserved."
+favicon: logo.svg

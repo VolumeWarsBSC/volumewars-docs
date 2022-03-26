@@ -1,0 +1,79 @@
+.md\:text-blue-500 {
+    color: #ff1574;
+}
+
+.dark .dark\:text-blue-400 {
+    color: #ff1574;
+}
+
+.text-gray-500 {
+    color: #ff1574;
+}
+
+.text-blue-500 {
+    color: #ff1574;
+}
+
+.text-blue-500:hover {
+    color: #5798e7;
+}
+
+.text-blue-300 {
+    color: #5798e7;
+}
+
+.hover\:text-blue-800:hover {
+    color: #5798e7;
+}
+
+.dark .dark\:hover\:text-blue-200:hover {
+    color: #5798e7;
+}
+
+.bg-blue-300 {
+    background-color: #ff1574;
+}
+
+.bg-blue-500 {
+    background-color: #ff1574;
+}
+
+.dark .dark\:bg-blue-400 {
+    background-color: #ff1574;
+}
+
+.text-yellow-500 {
+    color: #5798e7;
+}
+
+.bg-yellow-500 {
+    background-color: #5798e7;
+}
+
+.border-blue-500 {
+    border-color: #5798e7;
+}
+
+.docs-markdown a:not(.no-link) {
+    color: #ff1574;
+}
+
+.docs-markdown a:not(.no-link):hover {
+    color: #ff1574;
+}
+
+.dark .docs-markdown a:not(.no-link), .dark .docs-markdown h1 .header-anchor-trigger, .dark .docs-markdown h2 .header-anchor-trigger, .dark .docs-markdown h3 .header-anchor-trigger, .dark .docs-markdown h4 .header-anchor-trigger, .dark .docs-markdown h5 .header-anchor-trigger, .dark .docs-markdown h6 .header-anchor-trigger {
+    color: #ff1574;
+}
+
+.dark .dark\:text-dark-350 {
+    color: #ff1574;
+}
+
+.bg-gray-100 {
+    background-color: #f3e0e8;
+}
+
+.bg-blue-100 {
+    background-color: #bed4f0;
+}

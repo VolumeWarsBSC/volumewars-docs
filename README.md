@@ -1,2 +1,4 @@
-# volumewars-docs
-Volumewars Retype Documentation Repository
+# Volume Wars-Docs
+Volume Wars Knowledge Base &amp; Whitepaper
+
+https://retype.com/guides/getting-started/
