@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.gving.com/sitemap.xml.gz
+Sitemap: https://docs.volumewars.app/sitemap.xml.gz
