@@ -16,7 +16,7 @@ friendly and fair competitions that benefit every project that uses it.
 Volume Wars has been created as a solution for a growing problem, competition between projects on the blockchain. 
 The task for us was simple, create something that would bring the thousands of competing DeFi tokens all together 
 to boost volume and price action for each project. DeFi tokens are special and unique in that they have something 
-called the magic of tokenomics. Volume War is THE game to motivate those tokenomics and benefit all of DeFi as a 
+called the magic of tokenomics. Volume Wars is THE game to motivate those tokenomics and benefit all of DeFi as a 
 whole. #LiftingUp
 
 #### Calling all volume!
