@@ -15,5 +15,6 @@ and as these use cases are added we will be sure to add commons to the marketpla
 #### Marketplace Fee
 
 Volume Wars marketplace fee is currently set to 10% per each transaction. This fee is currently used to buy and burn Piggy Bank Tokens. 
-This fee and its use may be subject to change in the future. The overall objective in the future is to allow the community to decide how this 
-fee should be implemented with a governance mechanism, otherwise known as a Decentralized Autonomous Organization (DAO).
+This fee and its use may be subject to change in the future. The overall objective going forward is to allow the community to decide how 
+this fee should be implemented with a governance mechanism, otherwise known as a Decentralized Autonomous Organization (DAO). 
+The implementation and timeline of this DAO is still under construction.
