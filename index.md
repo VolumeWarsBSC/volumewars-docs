@@ -3,7 +3,7 @@ icon: home
 ---
 # Welcome
 ![](/static/welcome.png)
-Welcome to VolumeWars documentations, here you will learn everything about VolumeWars.
+Welcome to Volume Wars documentations, here you will learn everything about Volume Wars.
 
 #### Abstract
 Volume Wars allows any user to pick a project on the BNB chain, any project that has integrated with our platform, 

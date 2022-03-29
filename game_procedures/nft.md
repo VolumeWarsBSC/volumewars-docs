@@ -4,9 +4,9 @@ icon: image
 ---
 # NFTs
 
-VolumeWars rewards its participants with NFT Booster Packs, these can be claimed at the [NFT Locker](https://volumewars.app/#/locker)
+Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the [NFT Locker](https://volumewars.app/#/locker)
 
-After claiming these booster packs, users must unwrap the booster packs to mint their NFTs. These NFTs range from Common to rare. 
+After claiming these booster packs, users must unwrap the booster packs to mint their NFTs. These NFTs range from common to rare. 
 There are 4 common cards and 3 rare cards to complete a set.
 
 ![Common NFT](/game_procedures/common.png)
