@@ -21,7 +21,7 @@ _Note that each season is open for a period of one week._
 
 #### Examples
 
-If 25 BNB volume per week then then chance to obtain a legendary decrease by 50% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
+If 25 BNB volume per week then then chance to obtain a legendary decrease by 33.33% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
 
 +++ Week 1
 1:20 odds per rare dropped @ 0.12 BNB per attack
@@ -35,7 +35,7 @@ If 25 BNB volume per week then then chance to obtain a legendary decrease by 50%
 _etc..._
 +++
 
-If 50 BNB volume per week then chance to obtain a legendary decreases by 40% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
+If 50 BNB volume per week then chance to obtain a legendary decreases by 28.57% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
 
 +++ Week 1
 1:20 odds per rare dropped @ 0.12 BNB per attack
@@ -49,7 +49,7 @@ If 50 BNB volume per week then chance to obtain a legendary decreases by 40% the
 _etc..._
 +++
 
-If 100 BNB volume per week then chance to obtain a legendary decreases by 20% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
+If 100 BNB volume per week then chance to obtain a legendary decreases by 16.67% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
 
 +++ Week 1
 1:20 odds per rare dropped @ 0.12 BNB per attack
@@ -63,7 +63,7 @@ If 100 BNB volume per week then chance to obtain a legendary decreases by 20% th
 _etc..._
 +++
 
-If more than 100 BNB volume per week then chance to obtain a legendary decrease by 10% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
+If more than 100 BNB volume per week then chance to obtain a legendary decrease by 9.09% the current rate every week until it is only possible to obtain 1 legendary NFT dropped during the season.
 
 +++ Week 1
 1:20 odds per rare dropped @ 0.12 BNB per attack
