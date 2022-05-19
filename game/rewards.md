@@ -5,7 +5,7 @@ icon: flame
 # Rewards
 
 Volume Wars has a dynamic reward structure designed to allow for future configuration by the community through a DAO proposal and vote system.
-Our initial proposed reward structure is designed to provide sustainable rewards with a balanced incentive for adoption and works by taking fees from every attack.
+Our initial proposeal is designed to provide sustainable rewards with a balanced incentive for adoption and works by taking fees from every attack.
 
 This fee is broken down as following: 
 
