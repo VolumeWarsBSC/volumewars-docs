@@ -4,16 +4,21 @@ icon: cpu
 ---
 # Game Mechanics
 
-Volume Wars is designed to provide the most rewards the early adopters. To achieve this we need to adjust the game 
-variables using reward chance and prize pool percentage allocation. Currently these rewards are set at certain 
-amounts, approximately 7.2 BNB per legendary, but this number will increase over time while remaining sensitive 
-toward adoption of the protocol.
+Volume Wars is designed to provide the most rewards the early adopters.
+This is achieved by adjusting game variables such as reward chances and prize pool percentage allocation.
+Currently the probabilities are balanced to ensure minting a legendary costs 7.2 BNB worth of attacks on average,
+but this number will increase over time while remaining sensitive toward adoption of the protocol.
 
 !!!primary
-Remember, total rewards for legendary NFT holders is dependent on volume divided by the total legendary NFTs in 
-circulation. Regarding this, our long term planning is to set our variables that allow for at least 1 legendary 
-NFT to be minted per season. Of course this proposition is subjective towards seasonal volume as these NFTs are 
-dropped based upon BNB spent. So starting out we have implemented a percentage decrease in the odds to obtain a 
+25% of attack volume in BNB is distributed among Legendary holders in the form of staking rewards.
+The more legendaries there are, the less yield there is for each individual Legendary.
+In the long term, we want to adjust the difficulty of obtaining a Legendary such that on average one Legendary is minted per season.
+These NFTs expire and are unstaked automatically after 52 seasons, so the revenue would ideally be split between around 52 NFTs at some point in the future.
+
+In practice there is no guarantee as this is probabilistic and it depends on how much volume is generated.
+However more volume results in more rewards to split among holders.
+
+Starting out we have implemented a percentage decrease in the odds to obtain a 
 legendary NFT as adjusted weekly and influenced by protocol volume.
 !!!
 
@@ -78,6 +83,6 @@ _etc..._
 +++
 
 !!!Primary
-It is possible that the sudden change in volume from week to week could influence our decision to increase or decrease
- the rewards as necessary. We aim to hand this power over to a DAO in the future.
+    It is possible that the sudden change in volume from week to week could influence our decision to increase or decrease the rewards as necessary.
+    We are developing a difficulty adjustment algorithm based on past volume, and we aim to hand its management over to a DAO in the future.
 !!!

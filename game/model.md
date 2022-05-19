@@ -25,8 +25,8 @@ their direction.
 
 #### Early Adopters Incentive
 As mentioned in the game mechanics before, VolumeWars is designed to incentivize early adopters. Therefore:
-- First users to participate will receive an increased chance at obtaining a **legendary NFT**. This percentage of odds will diminish over time.
+- Early participants will benefit from the intially higher chances of obtaining a **Legendary NFT**. The odds of obtaining one will decrease over time.
 
-- **Free entry** for token developers to become a featured project on Volume Wars to start. As volume Wars gains popularity there could be a fee upon entry.
+- **Free entry** for token developers to become a featured project on Volume Wars to start. As volume Wars gains popularity this might involve a fee.
 
-- First participants will have the earliest opportunity to earn more BNB captured from the game because rewards is dependent on # of legendary NFTs staked
+- Early Legendary NFT holders will have the opportunity to earn a larger slice of the BNB captured from the game because rewards are divided equally between staked Legendaries, which will increase in number.

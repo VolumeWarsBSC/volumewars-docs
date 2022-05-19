@@ -6,41 +6,63 @@ expanded: true
 # The Game
 
 === 1. Choose a team/project
-Upon navigating to https://volumewars.app, the first step will be to join your team. It is important to understand 
-that each team on volume wars is a project with their own token on Binance Smart Chain. Note that you there is no 
-requirement to join any team, but after your selection you will not be able to switch teams, so choose wisely! 
-A team selection will require a small amount of gas to complete a one-time transaction.
+Upon navigating to https://volumewars.app, the first step is to pick and join a team.
+Each team on Volume Wars is a project with their own token on Binance Smart Chain.
+Switching teams afterwards is not allowed, so choose wisely!
+The team selection requires submitting a transaction, which will cost a small amount of gas.
 
-=== 2. Attack any other team to gain experience points and add damage points on to that team
-Now for the fun part. To attack a team, the user must select both the opposing team for a target as well as the 
-amount of damage points to be used for the attack. More damage points cost more BNB to attack, however higher 
-damage also yields a higher percentage of chance for reward as well as additional experience points earned. 
-Upon attack completion, the user will be awarded 1 booster pack.
+=== 2. Attack another team to earn XP and put damage points on the enemy
+Now for the fun part.
+First, select the team you want to attack. Second, choose the size of your attack in BNB:
+There are four attack *tiers*, which are based on the amount of BNB you will spend when choosing them.
+
+Your enemy receives Damage Points equivalent to the BNB you spent, while you earn the same amount in experience points (XP).
+You will receive a booster pack corresponding to the tier of your attack. The higher the tier, the greater the rewards they yield.
+Tier 1 booster packs have the lowest rewards, Tier 4 the highest.
+You will always receive a booster pack, but not all packs contain rewards.
 
 === 3. Receive booster packs which contain unique collectable rare and common NFTs
-As described previously, higher damage yields higher rewards generated as booster packs. Booster packs are unique 
-to volume wars and contain one of several substrate NFTs that, when combined together, allow the user to obtain 
-BNB captured within the game. The opportunity to collect and trade these NFTs within the ecosystem to complete 
+Higher damage yields higher rewards generated as higher tier booster packs.
+Booster packs are unique to volume wars and contain one of several substrate NFTs that, when combined together,
+allow the user to obtain BNB captured within the game. The opportunity to collect and trade these NFTs within the ecosystem to complete 
 the set is the overall objective to fully capture this value potential within Volume Wars.
 
 === 4. Unwrap your booster packs and retrieve your NFTs
-Volume Wars booster packs use Chainlink VRF by calling function fulfillRandomness yielding a random number from 
-the smart contract. This random number is indicative of the players chance at receiving 1 of 3 rare NFTs. 
-Chainlink VRF is widely considered as an industry standard in randomness on the blockchain. You can read 
-more about it on their website at https://docs.chain.link/docs/chainlink-vrf/. Note that there NFTs are 
-limited by season, and there can only be a collection of 4 common NFTs and 3 rare NFTs per season. This 
-means that as soon as the season is closed, there will be no more NFTs granted from participation for 
-that season. This limits the amount of NFTs that can be forged into a legendary NFT per season.
+Once you earn booster packs by playing the game, you must "claim" them before being able to open them.
+This is a two step process. After claiming, you will have to wait a few minutes before automatically
+receiving your claimed packs back, which are then ready to be opened.
 
-=== 5. Forge the the NFT set into a legendary NFT to collect your rewards.
-If you are lucky enough to get all 7 of the NFTs, you can now forge your legendary! Forging a legendary takes 
-the set of 7 NFTs and burns them to mint one legendary which allows the user to claim the rewards by staking 
-this legendary on our UI to capture these rewards generated each season. 
+We leverage Chainlink's VRF to generate random numbers for the rewards.
+The way the random numbers are selected inherently requires two transactions for
+security reasons, which is why the process happens in two steps, claiming, and opening.
+Learn more about it through their documentation: https://docs.chain.link/docs/chainlink-vrf/
+
+There is a fee for claiming, which is paid to the Chainlink VRF contract.
+All current unclaimed boosters are processed together in a single transaction,
+and the fee you pay does **not** change depending on the number of packs included in it.
+In order to reduce your costs you can wait until you have many booster packs before claiming them.
+
+Chainlink VRF is widely considered as an industry standard in randomness on the blockchain.
+
+Once the next season starts, minting NFTs from previous seasons becomes impossible.
+If you have unopened or unclaimed booster packs, these will always mint NFTs from the **current** season regardless of
+when the booster packs were obtained.
+
+The only exception is Legendaries. Legendaries from previous seasons can be forged after their season has ended, however
+they require you to own the full set of NFTs from the season they are from. Hence, they are limited by the number of rare and common
+NFTs minted during that season.
+
+=== 5. Complete a season's set to forge a Legendary and collect rewards
+Once you complete a particular season's set of 7 NFTs, you can sacrifice them to forge that season's *Legendary*.
+This requires one of each of the **4 common** and **3 rare** cards from the **same season**.
+
+Legendaries can be staked, receiving BNB rewards corresponding to a portion of each future season's revenue.
+After 52 seasons (counted from the Legendary's own season), they expire, and no longer receive rewards. Expired Legendary NFTs are automatically unstaked.
+
 ===
 
 !!!warning
-IMPORTANT: NFTs MUST BE FROM THE SAME SEASON TO MINT A LEGENDARY, YOU CANNOT MIX NFTS ACROSS MULTIPLE SEASONS 
-TO MINT A LEGENDARY.
+IMPORTANT: YOU CANNOT MIX NFTS ACROSS MULTIPLE SEASONS TO MINT A LEGENDARY. YOU NEED TO OWN THE FULL SET FROM A PARTICULAR SEASON
 !!!
 
 #### Examples
