@@ -11,28 +11,28 @@
     <!-- Primary Meta Tags -->
     <title>Game Mechanics</title>
     <meta name="title" content="Game Mechanics">
-    <meta name="description" content="Volume Wars is designed to provide the most rewards the early adopters. To achieve this we need to adjust the game" />
+    <meta name="description" content="Volume Wars is designed to provide the most rewards the early adopters. This is achieved by adjusting game variables such as reward chances and prize..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.volumewars.com/game/mechanics/">
     <meta property="og:title" content="Game Mechanics">
-    <meta property="og:description" content="Volume Wars is designed to provide the most rewards the early adopters. To achieve this we need to adjust the game">
+    <meta property="og:description" content="Volume Wars is designed to provide the most rewards the early adopters. This is achieved by adjusting game variables such as reward chances and prize...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.volumewars.com/game/mechanics/">
     <meta property="twitter:title" content="Game Mechanics">
-    <meta property="twitter:description" content="Volume Wars is designed to provide the most rewards the early adopters. To achieve this we need to adjust the game">
+    <meta property="twitter:description" content="Volume Wars is designed to provide the most rewards the early adopters. This is achieved by adjusting game variables such as reward chances and prize...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/logo.svg" rel="icon" />
-    <link href="/resources/css/retype.css?v=2.0.704668001429" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.706252092569" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.704668001429" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.706252092569" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.704668001429" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.706252092569" defer></script>
 
     <html>
     <head>
@@ -233,10 +233,10 @@
         <span>Game Mechanics</span>
     </h1>
 </doc-anchor-target>
-<p>Volume Wars is designed to provide the most rewards the early adopters. To achieve this we need to adjust the game
-variables using reward chance and prize pool percentage allocation. Currently these rewards are set at certain
-amounts, approximately 7.2 BNB per legendary, but this number will increase over time while remaining sensitive
-toward adoption of the protocol.</p>
+<p>Volume Wars is designed to provide the most rewards the early adopters.
+This is achieved by adjusting game variables such as reward chances and prize pool percentage allocation.
+Currently the probabilities are balanced to ensure minting a legendary costs 7.2 BNB worth of attacks on average,
+but this number will increase over time while remaining sensitive toward adoption of the protocol.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -250,10 +250,13 @@ toward adoption of the protocol.</p>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Remember, total rewards for legendary NFT holders is dependent on volume divided by the total legendary NFTs in
-circulation. Regarding this, our long term planning is to set our variables that allow for at least 1 legendary
-NFT to be minted per season. Of course this proposition is subjective towards seasonal volume as these NFTs are
-dropped based upon BNB spent. So starting out we have implemented a percentage decrease in the odds to obtain a
+<p>25% of attack volume in BNB is distributed among Legendary holders in the form of staking rewards.
+The more legendaries there are, the less yield there is for each individual Legendary.
+In the long term, we want to adjust the difficulty of obtaining a Legendary such that on average one Legendary is minted per season.
+These NFTs expire and are unstaked automatically after 52 seasons, so the revenue would ideally be split between around 52 NFTs at some point in the future.</p>
+<p>In practice there is no guarantee as this is probabilistic and it depends on how much volume is generated.
+However more volume results in more rewards to split among holders.</p>
+<p>Starting out we have implemented a percentage decrease in the odds to obtain a
 legendary NFT as adjusted weekly and influenced by protocol volume.</p>
         </div>
     </div>
@@ -370,8 +373,10 @@ legendary NFT as adjusted weekly and influenced by protocol volume.</p>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>It is possible that the sudden change in volume from week to week could influence our decision to increase or decrease
-the rewards as necessary. We aim to hand this power over to a DAO in the future.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">It is possible that the sudden change in volume from week to week could influence our decision to increase or decrease the rewards as necessary.
+We are developing a difficulty adjustment algorithm based on past volume, and we aim to hand its management over to a DAO in the future.</code></pre>
+</doc-codeblock></div>
         </div>
     </div>
 </div>

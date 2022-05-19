@@ -11,28 +11,28 @@
     <!-- Primary Meta Tags -->
     <title>The Game</title>
     <meta name="title" content="The Game">
-    <meta name="description" content="Upon navigating to https://volumewars.app, the first step will be to join your team. It is important to understand" />
+    <meta name="description" content="Upon navigating to https://volumewars.app, the first step is to pick and join a team. Each team on Volume Wars is a project with their own token on..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.volumewars.com/game/">
     <meta property="og:title" content="The Game">
-    <meta property="og:description" content="Upon navigating to https://volumewars.app, the first step will be to join your team. It is important to understand">
+    <meta property="og:description" content="Upon navigating to https://volumewars.app, the first step is to pick and join a team. Each team on Volume Wars is a project with their own token on...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.volumewars.com/game/">
     <meta property="twitter:title" content="The Game">
-    <meta property="twitter:description" content="Upon navigating to https://volumewars.app, the first step will be to join your team. It is important to understand">
+    <meta property="twitter:description" content="Upon navigating to https://volumewars.app, the first step is to pick and join a team. Each team on Volume Wars is a project with their own token on...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/logo.svg" rel="icon" />
-    <link href="/resources/css/retype.css?v=2.0.704668001429" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.706252092569" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.704668001429" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.706252092569" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.704668001429" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.706252092569" defer></script>
 
     <html>
     <head>
@@ -236,40 +236,55 @@
 <doc-panels>
    <doc-panel id="1-choose-a-team-project">
        <template #title>1. Choose a team/project</template>
-<p>Upon navigating to <a href="https://volumewars.app">https://volumewars.app</a>, the first step will be to join your team. It is important to understand
-that each team on volume wars is a project with their own token on Binance Smart Chain. Note that you there is no
-requirement to join any team, but after your selection you will not be able to switch teams, so choose wisely!
-A team selection will require a small amount of gas to complete a one-time transaction.</p>
+<p>Upon navigating to <a href="https://volumewars.app">https://volumewars.app</a>, the first step is to pick and join a team.
+Each team on Volume Wars is a project with their own token on Binance Smart Chain.
+Switching teams afterwards is not allowed, so choose wisely!
+The team selection requires submitting a transaction, which will cost a small amount of gas.</p>
    </doc-panel>
-   <doc-panel id="2-attack-any-other-team-to-gain-experience-points-and-add-damage-points-on-to-that-team">
-       <template #title>2. Attack any other team to gain experience points and add damage points on to that team</template>
-<p>Now for the fun part. To attack a team, the user must select both the opposing team for a target as well as the
-amount of damage points to be used for the attack. More damage points cost more BNB to attack, however higher
-damage also yields a higher percentage of chance for reward as well as additional experience points earned.
-Upon attack completion, the user will be awarded 1 booster pack.</p>
+   <doc-panel id="2-attack-another-team-to-earn-xp-and-put-damage-points-on-the-enemy">
+       <template #title>2. Attack another team to earn XP and put damage points on the enemy</template>
+<p>Now for the fun part.
+First, select the team you want to attack. Second, choose the size of your attack in BNB:
+There are four attack <em>tiers</em>, which are based on the amount of BNB you will spend when choosing them.</p>
+<p>Your enemy receives Damage Points equivalent to the BNB you spent, while you earn the same amount in experience points (XP).
+You will receive a booster pack corresponding to the tier of your attack. The higher the tier, the greater the rewards they yield.
+Tier 1 booster packs have the lowest rewards, Tier 4 the highest.
+You will always receive a booster pack, but not all packs contain rewards.</p>
    </doc-panel>
    <doc-panel id="3-receive-booster-packs-which-contain-unique-collectable-rare-and-common-nfts">
        <template #title>3. Receive booster packs which contain unique collectable rare and common NFTs</template>
-<p>As described previously, higher damage yields higher rewards generated as booster packs. Booster packs are unique
-to volume wars and contain one of several substrate NFTs that, when combined together, allow the user to obtain
-BNB captured within the game. The opportunity to collect and trade these NFTs within the ecosystem to complete
+<p>Higher damage yields higher rewards generated as higher tier booster packs.
+Booster packs are unique to volume wars and contain one of several substrate NFTs that, when combined together,
+allow the user to obtain BNB captured within the game. The opportunity to collect and trade these NFTs within the ecosystem to complete
 the set is the overall objective to fully capture this value potential within Volume Wars.</p>
    </doc-panel>
    <doc-panel id="4-unwrap-your-booster-packs-and-retrieve-your-nfts">
        <template #title>4. Unwrap your booster packs and retrieve your NFTs</template>
-<p>Volume Wars booster packs use Chainlink VRF by calling function fulfillRandomness yielding a random number from
-the smart contract. This random number is indicative of the players chance at receiving 1 of 3 rare NFTs.
-Chainlink VRF is widely considered as an industry standard in randomness on the blockchain. You can read
-more about it on their website at <a href="https://docs.chain.link/docs/chainlink-vrf/">https://docs.chain.link/docs/chainlink-vrf/</a>. Note that there NFTs are
-limited by season, and there can only be a collection of 4 common NFTs and 3 rare NFTs per season. This
-means that as soon as the season is closed, there will be no more NFTs granted from participation for
-that season. This limits the amount of NFTs that can be forged into a legendary NFT per season.</p>
+<p>Once you earn booster packs by playing the game, you must &quot;claim&quot; them before being able to open them.
+This is a two step process. After claiming, you will have to wait a few minutes before automatically
+receiving your claimed packs back, which are then ready to be opened.</p>
+<p>We leverage Chainlink&#x27;s VRF to generate random numbers for the rewards.
+The way the random numbers are selected inherently requires two transactions for
+security reasons, which is why the process happens in two steps, claiming, and opening.
+Learn more about it through their documentation: <a href="https://docs.chain.link/docs/chainlink-vrf/">https://docs.chain.link/docs/chainlink-vrf/</a></p>
+<p>There is a fee for claiming, which is paid to the Chainlink VRF contract.
+All current unclaimed boosters are processed together in a single transaction,
+and the fee you pay does <strong>not</strong> change depending on the number of packs included in it.
+In order to reduce your costs you can wait until you have many booster packs before claiming them.</p>
+<p>Chainlink VRF is widely considered as an industry standard in randomness on the blockchain.</p>
+<p>Once the next season starts, minting NFTs from previous seasons becomes impossible.
+If you have unopened or unclaimed booster packs, these will always mint NFTs from the <strong>current</strong> season regardless of
+when the booster packs were obtained.</p>
+<p>The only exception is Legendaries. Legendaries from previous seasons can be forged after their season has ended, however
+they require you to own the full set of NFTs from the season they are from. Hence, they are limited by the number of rare and common
+NFTs minted during that season.</p>
    </doc-panel>
-   <doc-panel id="5-forge-the-the-nft-set-into-a-legendary-nft-to-collect-your-rewards">
-       <template #title>5. Forge the the NFT set into a legendary NFT to collect your rewards.</template>
-<p>If you are lucky enough to get all 7 of the NFTs, you can now forge your legendary! Forging a legendary takes
-the set of 7 NFTs and burns them to mint one legendary which allows the user to claim the rewards by staking
-this legendary on our UI to capture these rewards generated each season.</p>
+   <doc-panel id="5-complete-a-season-s-set-to-forge-a-legendary-and-collect-rewards">
+       <template #title>5. Complete a season&#x27;s set to forge a Legendary and collect rewards</template>
+<p>Once you complete a particular season&#x27;s set of 7 NFTs, you can sacrifice them to forge that season&#x27;s <em>Legendary</em>.
+This requires one of each of the <strong>4 common</strong> and <strong>3 rare</strong> cards from the <strong>same season</strong>.</p>
+<p>Legendaries can be staked, receiving BNB rewards corresponding to a portion of each future season&#x27;s revenue.
+After 52 seasons (counted from the Legendary&#x27;s own season), they expire, and no longer receive rewards. Expired Legendary NFTs are automatically unstaked.</p>
    </doc-panel>
 </doc-panels>
 <div class="flex mb-6">
@@ -284,8 +299,7 @@ this legendary on our UI to capture these rewards generated each season.</p>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>IMPORTANT: NFTs MUST BE FROM THE SAME SEASON TO MINT A LEGENDARY, YOU CANNOT MIX NFTS ACROSS MULTIPLE SEASONS
-TO MINT A LEGENDARY.</p>
+<p>IMPORTANT: YOU CANNOT MIX NFTS ACROSS MULTIPLE SEASONS TO MINT A LEGENDARY. YOU NEED TO OWN THE FULL SET FROM A PARTICULAR SEASON</p>
         </div>
     </div>
 </div>

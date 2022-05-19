@@ -11,28 +11,28 @@
     <!-- Primary Meta Tags -->
     <title>Rewards</title>
     <meta name="title" content="Rewards">
-    <meta name="description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration to be shaped by the community with a DAO proposal and" />
+    <meta name="description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration by the community through a DAO proposal and vote system." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.volumewars.com/game/rewards/">
     <meta property="og:title" content="Rewards">
-    <meta property="og:description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration to be shaped by the community with a DAO proposal and">
+    <meta property="og:description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration by the community through a DAO proposal and vote system.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.volumewars.com/game/rewards/">
     <meta property="twitter:title" content="Rewards">
-    <meta property="twitter:description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration to be shaped by the community with a DAO proposal and">
+    <meta property="twitter:description" content="Volume Wars has a dynamic reward structure designed to allow for future configuration by the community through a DAO proposal and vote system.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/logo.svg" rel="icon" />
-    <link href="/resources/css/retype.css?v=2.0.704668001429" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.0.706252092569" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.0.704668001429" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.0.706252092569" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.704668001429" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.706252092569" defer></script>
 
     <html>
     <head>
@@ -233,12 +233,11 @@
         <span>Rewards</span>
     </h1>
 </doc-anchor-target>
-<p>Volume Wars has a dynamic reward structure designed to allow for future configuration to be shaped by the community with a DAO proposal and
-successful vote. Our initial proposed reward structure is designed to provide sustainable rewards with a balanced an incentive for adoption
-and works by taking fees from game activity on every attack.</p>
+<p>Volume Wars has a dynamic reward structure designed to allow for future configuration by the community through a DAO proposal and vote system.
+Our initial proposed reward structure is designed to provide sustainable rewards with a balanced incentive for adoption and works by taking fees from every attack.</p>
 <p>This fee is broken down as following:</p>
 <ul>
-<li>50% of the Volume Wars BNB from each attack is used to buy and then burn the tokens of the team they fight for.</li>
+<li>50% of the BNB spent on each attack is used to buy and then burn the <em>attacking</em> team&#x27;s tokens.</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -253,23 +252,21 @@ and works by taking fees from game activity on every attack.</p>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Example: User selects Team A as his team, and this user wants to attack Team B.  User attacks Team B and submits a transaction spending BNB,
-the Volume Wars smart contract buys the tokens from Team A using the Pancakeswap router contract and immediately sends them to the burn
-address. 50% of the attack BNB is used for this purpose.</p>
+<p>Example: User selects Team A as his team, and attacks Team B. He submits the attack transaction, which spends some of his BNB.
+The Volume Wars smart contract uses 50% of the attack&#x27;s BNB to buy Team A&#x27;s token from Pancakeswap and immediately sends them to the burn address.</p>
         </div>
     </div>
 </div>
 <ul>
-<li><p>25% of the Volume Wars BNB from each attack is added to a Legendary NFT reward pool to be distributed at the end of each season.  BNB
-rewards are distributed relative to the amount of legendary NFTs eligible for rewards. Users may stake their legendary NFT to gain access
-to these rewards.</p>
+<li><p>25% of the BNB from each attack is added to the Legendary NFT reward pool to be distributed at the beginning of the next season.
+These rewards are divided between the currently staked Legendary NFTs.
+Users may stake their legendary NFT to gain access to these rewards.</p>
 </li>
-<li><p>15% of the Volume Wars BNB from each attack is collected into a pool to be used to reward the winning team. It should be noted that the
-use of these rewards are subject to be determined by the project developers of the winning team. Options include allowing these rewards to
-be used to buy and burn the tokens of the winning team, or to be paired as liquidity pool tokens and then burned.</p>
+<li><p>15% of the BNB from each attack is collected into a reward pool for the winning team.
+It should be noted that the use of these funds is to be determined by the project developers of the winning team.
+Possibilities include buying and burning the tokens of the winning team, or adding liquidity to the token&#x27;s LP, and then burning the LP tokens.</p>
 </li>
-<li><p>10% of the Volume Wars BNB from each attack is used for development of the platform. This includes replenishing the chainlink tokens needed
-within the contract for the <em>FulfillRandomness</em> function as well as continued platform developments and marketing etc.</p>
+<li><p>10% of the Volume Wars BNB from each attack is used for platform development. This includes development costs and marketing, as well as referral bonuses.</p>
 </li>
 </ul>
 
