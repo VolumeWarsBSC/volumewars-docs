@@ -17,11 +17,11 @@ The Volume Wars smart contract uses 50% of the attack's BNB to buy Team A's toke
 !!!
 
 - 25% of the BNB from each attack is added to the Legendary NFT reward pool to be distributed at the beginning of the next season.
-These rewards are divided between the currently staked Legendary NFTs.
+These rewards are divided between the currently staked Legendary NFTs. IMPORTANT: You must have your LEGENDARY NFT staked before the start of the new season to be eligible to claim your rewards. 
 Users may stake their legendary NFT to gain access to these rewards.
 
 - 15% of the BNB from each attack is collected into a reward pool for the winning team.
 It should be noted that the use of these funds is to be determined by the project developers of the winning team.
-Possibilities include buying and burning the tokens of the winning team, or adding liquidity to the token's LP, and then burning the LP tokens.
+One of the following will apply, (1) buying and burning the tokens of the winning team, or (2) adding liquidity to the token's LP, and then burning the LP tokens.
 
 - 10% of the Volume Wars BNB from each attack is used for platform development. This includes development costs and marketing, as well as referral bonuses.
