@@ -23,7 +23,7 @@ Comparing this expected volume with the model volume, it scales the model odds u
 If the moving average volume increases, the odds will decrease, and vice versa. The purpose is analogous to that of a mining difficulty adjustment algorithm, aiming to ensure the number of rewards (legendaries) created in a given time period (season) remains **constant**.
 
 !!!
-Example: The moving average of volume is twice the model volume. The odds of obtaining a rare will be halved by the difficulty adjustment contract once the new season starts.
+Example: The current moving average of volume is twice the model volume. The odds of obtaining a rare will be set to half the model odds by the difficulty adjustment contract once the new season starts.
 !!!
 
 ## Estimation Algorithm
