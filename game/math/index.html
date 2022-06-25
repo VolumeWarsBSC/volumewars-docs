@@ -9,21 +9,21 @@
     <meta name="generator" content="Retype 2.0">
 
     <!-- Primary Meta Tags -->
-    <title>NFTs</title>
-    <meta name="title" content="NFTs">
-    <meta name="description" content="Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the NFT Locker" />
+    <title>Legendary Math</title>
+    <meta name="title" content="Legendary Math">
+    <meta name="description" content="We developed an algorithm in order to estimate the expected number of legendaries we expect to be created during a season given the season's expected..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.volumewars.com/game/nft/">
-    <meta property="og:title" content="NFTs">
-    <meta property="og:description" content="Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the NFT Locker">
+    <meta property="og:url" content="https://docs.volumewars.com/game/math/">
+    <meta property="og:title" content="Legendary Math">
+    <meta property="og:description" content="We developed an algorithm in order to estimate the expected number of legendaries we expect to be created during a season given the season's expected...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.volumewars.com/game/nft/">
-    <meta property="twitter:title" content="NFTs">
-    <meta property="twitter:description" content="Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the NFT Locker">
+    <meta property="twitter:url" content="https://docs.volumewars.com/game/math/">
+    <meta property="twitter:title" content="Legendary Math">
+    <meta property="twitter:description" content="We developed an algorithm in order to estimate the expected number of legendaries we expect to be created during a season given the season's expected...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -33,6 +33,7 @@
     <script type="text/javascript" src="/resources/js/config.js?v=2.0.709515747050" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.0" defer data-turbo-track="reload"></script>
     <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.0.709515747050" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=2.0.709515747050" defer></script>
 
     <html>
     <head>
@@ -227,27 +228,91 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="nfts" class="break-words">
+<doc-anchor-target id="legendary-math" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nfts">#</doc-anchor-trigger>
-        <span>NFTs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#legendary-math">#</doc-anchor-trigger>
+        <span>Legendary Math</span>
     </h1>
 </doc-anchor-target>
-<p>Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the <a href="https://volumewars.app/#/locker">NFT Locker</a></p>
-<p>After claiming these booster packs, users must unwrap the booster packs to mint their NFTs. These NFTs range from common to rare.
-There are 4 common cards and 3 rare cards to complete a set.</p>
-<p>Players can play VolumeWars and attempt to collect a full set themselves or they can buy the missing NFTs to complete their set from a 3rd party marketplace.</p>
-<p>Once a season&#x27;s set is completed, it can be forged into a Legendary NFT.</p>
-<doc-anchor-target id="nft-staking">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nft-staking">#</doc-anchor-trigger>
-        <span>NFT Staking</span>
-    </h4>
+<p>We developed an algorithm in order to estimate the expected number of legendaries we expect to be created during a season given the season&#x27;s expected volume and the odds of obtaining a rare with an attack.</p>
+<p>We assume that all attacks are Tier 4, the highest and most BNB-efficient attack tier for obtaining rare cards.</p>
+<p>We used this algorithm in order to set the <em>model odds</em> in the <strong>Difficulty Adjustment</strong> contract.
+These <em>model odds</em> correspond to a specific <em>model volume</em>, and given a season with that much volume, these odds should result in an expected number of legendaries during that season that was decided when generating the model values.</p>
+<p>The current model odds and volume are tuned to <strong>~3.6 legendaries</strong> per season.</p>
+<doc-anchor-target id="difficulty-adjustment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#difficulty-adjustment">#</doc-anchor-trigger>
+        <span>Difficulty Adjustment</span>
+    </h2>
 </doc-anchor-target>
-<p>Legendary NFTs can be staked to collect BNB rewards generated by the other players participating in Volume Wars.
-These are taken from BNB spent in attacks by all users who play the game. PLEASE NOTE: There is NO GAURANTEE of rewards, considering these rewards are dependant upon game activity. A complete loss of funds could be resulted from any failure of dependancies.</p>
-<p>Legendary NFT Stakers can collect their rewards using the claim button on the dashboard after the next season begins.
-Legendaries can be traded for BNB in our NFT makretplace.</p>
+<p>The Difficulty Adjustment contract is called every time a new season is opened in order to update the odds of getting rare cards.</p>
+<p>It calculates the <strong>moving average volume</strong> from the past 5 seasons in order to estimate the next season&#x27;s expected volume.
+Comparing this expected volume with the model volume, it scales the model odds up and down proportionally to the ratio of volumes, in order to preserve the same expected number of legendaries per season the model odds were tuned for.</p>
+<p>If the moving average volume increases, the odds will decrease, and vice versa. The purpose is analogous to that of a mining difficulty adjustment algorithm, aiming to ensure the number of rewards (legendaries) created in a given time period (season) remains <strong>constant</strong>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Example: The moving average of volume is twice the model volume. The odds of obtaining a rare will be halved by the difficulty adjustment contract once the new season starts.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="estimation-algorithm">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#estimation-algorithm">#</doc-anchor-trigger>
+        <span>Estimation Algorithm</span>
+    </h2>
+</doc-anchor-target>
+<p>In order to know how many legendaries we expect to be generated in a particular season, we only need that season&#x27;s volume, and the chances of obtaining a rare card NFT on each attack.</p>
+<p>To mint a Legendary NFT, a player must complete a season&#x27;s NFT set, which means collecting at least one of each of the cards numbered from 1 to 7, all from the same season. 5 to 7 are the rares. 1 to 4 are commons.</p>
+<p>The chances of obtaining particular commons do not have a significant impact on the creation of legendaries.
+Therefore we treat obtaining a common as &quot;not getting a rare&quot;. We don&#x27;t care about which commons players are getting or how many they are getting.
+Once enough rares have been generated, there will be more than enough commons, and the probability of a player obtaining all 3 unique rares and not having enough commons to complete the season&#x27;s set is vanishingly small.</p>
+<p>We also assume that every attack is a Tier 4. Therefore volume is expressed in number of attacks rather than BNB. In order to convert that to BNB, simply multiply it by the cost of a Tier 4 attack (0.12 BNB at the time of writing).</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">from itertools import combinations_with_replacement
+from collections import Counter
+from math import factorial
+
+def legendaries_per_season(n_attacks, p):
+  n_attacks_factorial = factorial(n_attacks)
+
+  # will contian the relative probability of getting any number of legendaries (full sets of rares) in this season
+  # mapping n_sets =&gt; probability
+  n_sets_p = {}
+  # 1, 2, 3 represent rares 5, 6, 7; 4 represents any common card
+  combinations = combinations_with_replacement([1, 2, 3, 4], n_attacks)
+  # iterate over every possible combination of cards drawn, each combination is one way the season could play out
+  for combination in combinations:
+    # count how many cards of each type we got
+    count = Counter(combination)
+
+    # the number of full sets of 3 different rares that are in this combination
+    # which is also the number of legendaries that will be created
+    n_sets =  min([count[1], count[2], count[3]])
+
+    # the relative probability of this a combination appearing, given the chance of rares vs commons and the number of attacks
+    prob = n_attacks_factorial/(factorial(count[1]) * factorial(count[2]) * factorial(count[3]) * factorial(count[4])) * (p/3)**(count[1] + count[2] + count[3]) * (1-p)**count[4]
+
+    # Add this probability to the total probability for getting this number of sets/legendaries
+    n_sets_p[n_sets] = n_sets_p.get(n_sets, 0) + prob
+
+  expected_legendaries = 0
+  # We get the number of expected legendaries by multiplying each possible number of legendaries (0, 1, 2, etc) by the probability of it occurring, and adding them all together
+  for n_sets, prob in n_sets_p.items():
+    expected_legendaries += n_sets*prob
+
+  return expected_legendaries</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -257,20 +322,20 @@ Legendaries can be traded for BNB in our NFT makretplace.</p>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/game/experience/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/game/attacktiers/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Experience Points</span>
+                                                <span class="block mt-1">Attack Tiers</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/game/rewards/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/nft_marketplace/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Rewards</span>
+                                                <span class="block mt-1">NFT Marketplace</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -314,7 +379,7 @@ Legendaries can be traded for BNB in our NFT makretplace.</p>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "NFTs", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Legendary Math", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 
     <script>
         const headerAnchorTrigger = document.getElementsByClassName('header-anchor-trigger')[0];
