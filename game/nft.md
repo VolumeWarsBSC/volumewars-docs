@@ -6,8 +6,9 @@ icon: image
 
 Volume Wars rewards its participants with NFT Booster Packs, these can be claimed at the [NFT Locker](https://volumewars.app/#/locker)
 
-After claiming these booster packs, users must unwrap the booster packs to mint their NFTs. These NFTs range from common to rare. 
-There are 4 common cards and 3 rare cards to complete a set.
+After claiming these booster packs, users must unwrap the booster packs to mint their NFTs. It is important to note that during this process 
+batching transactions requires less gas and fees, it is therefore highly recommended to claim and open NFTs in one bundle to minimize these fees. 
+These NFTs obtained from the booster packs range from common to rare and there are 4 common cards and 3 rare cards to complete a set.
 
 Players can play VolumeWars and attempt to collect a full set themselves or they can buy the missing NFTs to complete their set from a 3rd party marketplace.
 
